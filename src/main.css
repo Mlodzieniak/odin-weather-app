@@ -1,0 +1,71 @@
+body {
+    background-color: bisque;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: solid 1px black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    /* align-items: center; */
+}
+
+header,
+footer {
+    height: 8vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'input input'
+        'data animation';
+
+}
+
+
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: clamp(400px, 50%, 700px);
+    grid-area: input;
+}
+
+.data-div {
+    grid-area: data;
+}
+
+.animation-div {
+    grid-area: animation;
+}
+
+.loc-input-error {
+    background-color: crimson;
+    color: black;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+input {
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+}
+
+button {
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+}
