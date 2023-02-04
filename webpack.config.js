@@ -4,51 +4,44 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  devtool: false,
-  entry: "./src/index.js",
+  entry: {
+    bundle: path.resolve(__dirname, "./src/index.js"),
+  },
   output: {
-    filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    filename: "[name][contenthash].js",
     clean: true,
+    assetModuleFilename: "[name][ext]",
   },
+  devtool: "source-map",
   devServer: {
-    open: true,
     static: {
-      directory: path.join(__dirname, "."),
+      directory: path.resolve(__dirname, "dist"),
     },
+    port: 3000,
+    open: true,
+    hot: true,
     compress: true,
-    port: 9000,
+    historyApiFallback: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "Weather forecast",
-      template: "./index.html",
-      filename: "index.html",
-    }),
-    new FaviconsWebpackPlugin("./src/sky-cloud-svgrepo-com.svg"),
-  ],
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.html$/i,
-        loader: "html-loader",
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images/",
-            },
-          },
-        ],
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Weather-App",
+      filename: "index.html",
+      template: "src/template.html",
+    }),
+    new FaviconsWebpackPlugin("./src/assets/logo.svg"),
+  ],
 };

@@ -15,6 +15,7 @@ async function submitData() {
   } else {
     locInputError.textContent = "You need to provide location.";
     locInputError.className = "loc-input-error";
+    locInputError.classList.remove("hide");
   }
 }
 export default submitData;

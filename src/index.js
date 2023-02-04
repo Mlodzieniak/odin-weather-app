@@ -3,11 +3,13 @@ import getIpData from "./API/ipdata";
 import getWeatherByCords from "./API/weatherByCords";
 import printData from "./printData";
 import submitData from "./submitData";
+import logo from "./assets/logo.svg";
 
 const submitBTN = document.querySelector(".submit-loc-btn");
 const locInput = document.querySelector(".loc-input");
 const locInputError = document.querySelector(".loc-input-error");
-
+const logoImg = document.querySelector("#logo");
+logoImg.src = logo;
 window.onload = async () => {
   if (!locInput.value.length) {
     locInputError.className = "loc-input-error hide";
@@ -31,4 +33,4 @@ locInput.addEventListener("keydown", (event) => {
     submitData();
   }
 });
-submitBTN.onclick = submitData();
+submitBTN.onclick = () => submitData();
