@@ -1,7 +1,8 @@
 import "./main.css";
 import getIpData from "./API/ipdata";
-import getWeather from "./API/openWeatherMap";
+import getWeatherByCords from "./API/weatherByCords";
 import printData from "./printData";
+import submitData from "./submitData";
 
 const submitBTN = document.querySelector(".submit-loc-btn");
 const locInput = document.querySelector(".loc-input");
@@ -14,9 +15,7 @@ window.onload = async () => {
   try {
     const ipdata = await getIpData();
     const location = [ipdata.latitude, ipdata.longitude];
-    const weatherData = await getWeather(location);
-    console.log(weatherData);
-    console.log(typeof weatherData);
+    const weatherData = await getWeatherByCords(location);
     printData(weatherData);
   } catch (error) {
     console.log(error);
@@ -27,11 +26,23 @@ locInput.oninput = () => {
     locInputError.className = "loc-input-error hide";
   }
 };
-submitBTN.onclick = () => {
-  if (locInput.value.length) {
-    getWeather(locInput.value);
-  } else {
-    locInputError.textContent = "You need to provide location.";
-    locInputError.className = "loc-input-error";
+locInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    submitData();
   }
-};
+});
+submitBTN.onclick = submitData();
+
+// async function submitData() {
+//   if (locInput.value.length) {
+//     const weatherData = await getWeatherByCity(locInput.value);
+//     if (weatherData.cod === 200) {
+//       printData(weatherData);
+//     } else {
+//       printError(weatherData.message);
+//     }
+//   } else {
+//     locInputError.textContent = "You need to provide location.";
+//     locInputError.className = "loc-input-error";
+//   }
+// }

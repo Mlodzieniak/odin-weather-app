@@ -18,8 +18,6 @@ function getIpData() {
             new Error(`Request failed with this status code: ${this.status}`)
           );
         }
-        // console.log(this.responseText);
-        // return [this.responseText.latitude, this.responseText.longitude];
       }
     };
 
