@@ -12,16 +12,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ "./node_modules/css-loader/dist/runtime/noSourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0px;\n    margin: 0px;\n    /* border: solid 1px black; */\n    font-family: 'Roboto Slab', serif;\n    font-weight: 300;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    height: 100vh;\n    align-items: center;\n    font-size: 2rem;\n    overflow: hidden;\n    background-color: rgb(52, 58, 64);\n\n}\n\nheader,\nfooter {\n    /* height: 8vh; */\n    width: 100vw;\n    display: flex;\n    justify-content: center;\n    background-color: crimson;\n}\n\n\n.header-name {\n    font-family: 'Fredoka One', cursive;\n    color: #27B5F7;\n    font-size: 4rem;\n    font-weight: 1000;\n    -webkit-text-stroke: 2px black;\n    /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */\n}\n\n\n.container {\n    display: grid;\n    /* width: clamp(400px, 40%, 800px); */\n    height: 70%;\n    grid-template-columns: repeat(2, 1fr);\n    grid-template-rows: 1fr 5fr;\n    grid-template-areas:\n        'input input'\n        'data data';\n    gap: 0.8rem;\n}\n\n\n\n.input-div {\n    display: flex;\n    flex-direction: column;\n    gap: 0.4rem;\n    grid-area: input;\n    grid-column: 1 / 3;\n    align-items: center;\n\n\n}\n\n.data-div {\n    padding: 1rem 2rem;\n    grid-area: data;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    background-color: crimson;\n    border-radius: 1rem;\n    box-shadow: 0px 0px 1rem 0px rgb(31, 31, 31);\n    /* opacity: 0; */\n    transition: opacity 0.2s ease-in-out;\n\n}\n\n.data-div.show {\n    opacity: 1;\n}\n\n.data-div>* {\n    /* flex: 1; */\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: visible;\n    height: 1.3rem;\n    font-weight: 700;\n}\n\n.city {\n    font-size: 4rem;\n    font-weight: 700;\n    color: #27B5F7;\n    -webkit-text-stroke: 2px black;\n    font-family: 'Fredoka One', cursive;\n    white-space: nowrap;\n\n\n}\n\n.hide {\n    opacity: 0;\n}\n\n\n\n.loc-input-error {\n    background-color: crimson;\n    color: black;\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n    box-sizing: border-box;\n    box-shadow: 0px 0px 1rem 0px rgb(31, 31, 31);\n}\n\n.hide {\n    display: none;\n}\n\ninput {\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n}\n\nbutton {\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n}\n\nimg {\n    overflow: hidden;\n    height: 75px;\n    width: 75px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0px;\n    margin: 0px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 300;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    justify-content: flex-start;\n    font-size: 2rem;\n    overflow: hidden;\n    background-color: rgb(52, 58, 64);\n    height: 100vh;\n    width: 100vw;\n\n}\n\nheader,\nfooter {\n    display: flex;\n    justify-content: center;\n    background-color: crimson;\n    padding: 0.3rem;\n\n}\n\n\n.header-name {\n    font-family: 'Fredoka One', cursive;\n    color: #27B5F7;\n    font-size: 4rem;\n    font-weight: 1000;\n    -webkit-text-stroke: 2px black;\n}\n\n\n.container {\n    display: flex;\n    flex-direction: column;\n    margin-bottom: 4rem;\n    align-items: center;\n}\n\n\n\n.input-div {\n    display: flex;\n    flex-direction: column;\n    gap: 0.4rem;\n    align-items: center;\n    padding: 1.5rem;\n\n\n}\n\n.data-div {\n    padding: 2.5rem;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    background-color: crimson;\n    border-radius: 1rem;\n    box-shadow: 0px 0px 1rem 0px rgb(31, 31, 31);\n    transition: opacity 0.2s ease-in-out;\n    height: 100%;\n    gap: 2.5rem;\n\n}\n\n.data-div.show {\n    opacity: 1;\n}\n\n.data-div>* {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: visible;\n    height: 1.3rem;\n    font-weight: 700;\n}\n\n.city {\n    font-size: 4rem;\n    font-weight: 700;\n    color: #27B5F7;\n    -webkit-text-stroke: 2px black;\n    font-family: 'Fredoka One', cursive;\n    white-space: nowrap;\n\n\n}\n\n.hide {\n    opacity: 0;\n}\n\n\n\n.loc-input-error {\n    background-color: crimson;\n    color: black;\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n    box-sizing: border-box;\n    box-shadow: 0px 0px 1rem 0px rgb(31, 31, 31);\n}\n\n.hide {\n    display: none;\n}\n\ninput {\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n}\n\nbutton {\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n}\n\nimg {\n    overflow: hidden;\n    height: 75px;\n    width: 75px;\n}\n\n@media only screen and (max-width: 760px) {\n    body {\n        overflow-y: scroll;\n        min-width: 400px;\n        justify-content: space-between;\n    }\n\n    .container {\n        margin: 0px;\n        align-items: stretch;\n        flex: 1;\n    }\n\n    header {\n        white-space: nowrap;\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .header-name {\n        font-size: 2rem;\n\n    }\n\n    .data-div {\n        justify-content: center;\n        gap: 2rem;\n        border-radius: 0px;\n        flex: 1;\n    }\n\n    .input-div {\n        padding: 1.5rem;\n    }\n\n    .data-div {\n        font-size: 1.5rem;\n    }\n\n    .city {\n        font-size: 2.5rem;\n    }\n\n    input,\n    button {\n        display: block;\n        width: 100%;\n    }\n\n    .loc-input-error {\n        font-size: 1.5rem;\n        width: 100vw;\n        white-space: nowrap;\n        text-align: center;\n    }\n\n}", "",{"version":3,"sources":["webpack://./src/main.css"],"names":[],"mappings":"AAAA;IACI,YAAY;IACZ,WAAW;IACX,iCAAiC;IACjC,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,oBAAoB;IACpB,2BAA2B;IAC3B,eAAe;IACf,gBAAgB;IAChB,iCAAiC;IACjC,aAAa;IACb,YAAY;;AAEhB;;AAEA;;IAEI,aAAa;IACb,uBAAuB;IACvB,yBAAyB;IACzB,eAAe;;AAEnB;;;AAGA;IACI,mCAAmC;IACnC,cAAc;IACd,eAAe;IACf,iBAAiB;IACjB,8BAA8B;AAClC;;;AAGA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,mBAAmB;AACvB;;;;AAIA;IACI,aAAa;IACb,sBAAsB;IACtB,WAAW;IACX,mBAAmB;IACnB,eAAe;;;AAGnB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,sBAAsB;IACtB,6BAA6B;IAC7B,yBAAyB;IACzB,mBAAmB;IACnB,4CAA4C;IAC5C,oCAAoC;IACpC,YAAY;IACZ,WAAW;;AAEf;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,iBAAiB;IACjB,cAAc;IACd,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,cAAc;IACd,8BAA8B;IAC9B,mCAAmC;IACnC,mBAAmB;;;AAGvB;;AAEA;IACI,UAAU;AACd;;;;AAIA;IACI,yBAAyB;IACzB,YAAY;IACZ,qBAAqB;IACrB,sBAAsB;IACtB,sBAAsB;IACtB,4CAA4C;AAChD;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI;QACI,kBAAkB;QAClB,gBAAgB;QAChB,8BAA8B;IAClC;;IAEA;QACI,WAAW;QACX,oBAAoB;QACpB,OAAO;IACX;;IAEA;QACI,mBAAmB;QACnB,sBAAsB;QACtB,mBAAmB;IACvB;;IAEA;QACI,eAAe;;IAEnB;;IAEA;QACI,uBAAuB;QACvB,SAAS;QACT,kBAAkB;QAClB,OAAO;IACX;;IAEA;QACI,eAAe;IACnB;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,iBAAiB;IACrB;;IAEA;;QAEI,cAAc;QACd,WAAW;IACf;;IAEA;QACI,iBAAiB;QACjB,YAAY;QACZ,mBAAmB;QACnB,kBAAkB;IACtB;;AAEJ","sourcesContent":["* {\n    padding: 0px;\n    margin: 0px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 300;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    justify-content: flex-start;\n    font-size: 2rem;\n    overflow: hidden;\n    background-color: rgb(52, 58, 64);\n    height: 100vh;\n    width: 100vw;\n\n}\n\nheader,\nfooter {\n    display: flex;\n    justify-content: center;\n    background-color: crimson;\n    padding: 0.3rem;\n\n}\n\n\n.header-name {\n    font-family: 'Fredoka One', cursive;\n    color: #27B5F7;\n    font-size: 4rem;\n    font-weight: 1000;\n    -webkit-text-stroke: 2px black;\n}\n\n\n.container {\n    display: flex;\n    flex-direction: column;\n    margin-bottom: 4rem;\n    align-items: center;\n}\n\n\n\n.input-div {\n    display: flex;\n    flex-direction: column;\n    gap: 0.4rem;\n    align-items: center;\n    padding: 1.5rem;\n\n\n}\n\n.data-div {\n    padding: 2.5rem;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    background-color: crimson;\n    border-radius: 1rem;\n    box-shadow: 0px 0px 1rem 0px rgb(31, 31, 31);\n    transition: opacity 0.2s ease-in-out;\n    height: 100%;\n    gap: 2.5rem;\n\n}\n\n.data-div.show {\n    opacity: 1;\n}\n\n.data-div>* {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: visible;\n    height: 1.3rem;\n    font-weight: 700;\n}\n\n.city {\n    font-size: 4rem;\n    font-weight: 700;\n    color: #27B5F7;\n    -webkit-text-stroke: 2px black;\n    font-family: 'Fredoka One', cursive;\n    white-space: nowrap;\n\n\n}\n\n.hide {\n    opacity: 0;\n}\n\n\n\n.loc-input-error {\n    background-color: crimson;\n    color: black;\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n    box-sizing: border-box;\n    box-shadow: 0px 0px 1rem 0px rgb(31, 31, 31);\n}\n\n.hide {\n    display: none;\n}\n\ninput {\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n}\n\nbutton {\n    border-radius: 0.5rem;\n    padding: 0.4rem 1.5rem;\n}\n\nimg {\n    overflow: hidden;\n    height: 75px;\n    width: 75px;\n}\n\n@media only screen and (max-width: 760px) {\n    body {\n        overflow-y: scroll;\n        min-width: 400px;\n        justify-content: space-between;\n    }\n\n    .container {\n        margin: 0px;\n        align-items: stretch;\n        flex: 1;\n    }\n\n    header {\n        white-space: nowrap;\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .header-name {\n        font-size: 2rem;\n\n    }\n\n    .data-div {\n        justify-content: center;\n        gap: 2rem;\n        border-radius: 0px;\n        flex: 1;\n    }\n\n    .input-div {\n        padding: 1.5rem;\n    }\n\n    .data-div {\n        font-size: 1.5rem;\n    }\n\n    .city {\n        font-size: 2.5rem;\n    }\n\n    input,\n    button {\n        display: block;\n        width: 100%;\n    }\n\n    .loc-input-error {\n        font-size: 1.5rem;\n        width: 100vw;\n        white-space: nowrap;\n        text-align: center;\n    }\n\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -122,16 +122,27 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
-  \**************************************************************/
+/***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \************************************************************/
 /***/ ((module) => {
 
 
 
-module.exports = function (i) {
-  return i[1];
+module.exports = function (item) {
+  var content = item[1];
+  var cssMapping = item[3];
+  if (!cssMapping) {
+    return content;
+  }
+  if (typeof btoa === "function") {
+    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
+    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+    var sourceMapping = "/*# ".concat(data, " */");
+    return [content].concat([sourceMapping]).join("\n");
+  }
+  return [content].join("\n");
 };
 
 /***/ }),
@@ -701,10 +712,21 @@ async function submitData() {
   } else {
     locInputError.textContent = "You need to provide location.";
     locInputError.className = "loc-input-error";
+    locInputError.classList.remove("hide");
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (submitData);
 
+
+/***/ }),
+
+/***/ "./src/assets/logo.svg":
+/*!*****************************!*\
+  !*** ./src/assets/logo.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "logo.svg";
 
 /***/ })
 
@@ -759,6 +781,18 @@ async function submitData() {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -773,6 +807,26 @@ async function submitData() {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -793,6 +847,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _API_weatherByCords__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./API/weatherByCords */ "./src/API/weatherByCords.js");
 /* harmony import */ var _printData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./printData */ "./src/printData.js");
 /* harmony import */ var _submitData__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./submitData */ "./src/submitData.js");
+/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/logo.svg */ "./src/assets/logo.svg");
+
 
 
 
@@ -802,7 +858,8 @@ __webpack_require__.r(__webpack_exports__);
 const submitBTN = document.querySelector(".submit-loc-btn");
 const locInput = document.querySelector(".loc-input");
 const locInputError = document.querySelector(".loc-input-error");
-
+const logoImg = document.querySelector("#logo");
+logoImg.src = _assets_logo_svg__WEBPACK_IMPORTED_MODULE_5__;
 window.onload = async () => {
   if (!locInput.value.length) {
     locInputError.className = "loc-input-error hide";
@@ -826,23 +883,10 @@ locInput.addEventListener("keydown", (event) => {
     (0,_submitData__WEBPACK_IMPORTED_MODULE_4__["default"])();
   }
 });
-submitBTN.onclick = (0,_submitData__WEBPACK_IMPORTED_MODULE_4__["default"])();
-
-// async function submitData() {
-//   if (locInput.value.length) {
-//     const weatherData = await getWeatherByCity(locInput.value);
-//     if (weatherData.cod === 200) {
-//       printData(weatherData);
-//     } else {
-//       printError(weatherData.message);
-//     }
-//   } else {
-//     locInputError.textContent = "You need to provide location.";
-//     locInputError.className = "loc-input-error";
-//   }
-// }
+submitBTN.onclick = () => (0,_submitData__WEBPACK_IMPORTED_MODULE_4__["default"])();
 
 })();
 
 /******/ })()
 ;
+//# sourceMappingURL=bundlec4e135b8bcecd233f53e.js.map
