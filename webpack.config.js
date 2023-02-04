@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -20,10 +21,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Weather forecast XD",
+      title: "Weather forecast",
       template: "./index.html",
       filename: "index.html",
     }),
+    new FaviconsWebpackPlugin("./src/sky-cloud-svgrepo-com.svg"),
   ],
   module: {
     rules: [
@@ -36,13 +38,13 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.svg$/,
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         use: [
           {
-            loader: "url-loader",
+            loader: "file-loader",
             options: {
-              limit: 10000, // if the SVG is smaller than 10KB, encode as a data URL
               name: "[name].[ext]",
+              outputPath: "images/",
             },
           },
         ],

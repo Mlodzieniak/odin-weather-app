@@ -32,17 +32,3 @@ locInput.addEventListener("keydown", (event) => {
   }
 });
 submitBTN.onclick = submitData();
-
-// async function submitData() {
-//   if (locInput.value.length) {
-//     const weatherData = await getWeatherByCity(locInput.value);
-//     if (weatherData.cod === 200) {
-//       printData(weatherData);
-//     } else {
-//       printError(weatherData.message);
-//     }
-//   } else {
-//     locInputError.textContent = "You need to provide location.";
-//     locInputError.className = "loc-input-error";
-//   }
-// }
